@@ -29,6 +29,7 @@ public class CalculatorUI {
     JButton buttonStar = new JButton("*");
     JButton buttonForSlash = new JButton("/");
     JButton buttonEquals = new JButton("=");
+    JButton buttonClear = new JButton("Cl");
     JTextArea textArea = new JTextArea();
     JPanel digitPanel = new JPanel();
     JPanel windowPanel = new JPanel();
@@ -182,6 +183,13 @@ public class CalculatorUI {
         buttonEquals.setPreferredSize(new Dimension(50,30));
         digitPanel.add(buttonEquals,c);
 
+        c.gridx = 0;
+        c.gridy = 3;
+        c.weightx = 0.1;
+        c.weighty = 0.1;
+        buttonEquals.setPreferredSize(new Dimension(50,30));
+        digitPanel.add(buttonClear,c);
+
         addButtonListeners();
 
     }
@@ -247,29 +255,59 @@ public class CalculatorUI {
         });
         buttonPlus.addActionListener(e ->{
             String value = "+";
-            addToValues(valueString);
+            operation = value;
+            addToValues(valueString); //Adds the current value entered into the value list and sets up the next value.
             valueString = "";
             textArea.append(value);
         });
         buttonMinus.addActionListener(e ->{
             String value = "-";
+            operation = value;
+            addToValues(valueString); //Adds the current value entered into the value list and sets up the next value.
+            valueString = "";
             textArea.append(value);
         });
         buttonStar.addActionListener(e ->{
             String value = "*";
+            operation = value;
+            addToValues(valueString); //Adds the current value entered into the value list and sets up the next value.
+            valueString = "";
             textArea.append(value);
         });
         buttonForSlash.addActionListener(e ->{
             String value = "/";
+            operation = value;
+            addToValues(valueString); //Adds the current value entered into the value list and sets up the next value.
+            valueString = "";
+            textArea.append(value);
+        });
+        buttonClear.addActionListener(e ->{
+            String value = "";
+            values.removeAll(values);
+            valueString = "";
             textArea.append(value);
         });
         buttonEquals.addActionListener(e ->{
             String value = "=";
-            addToValues(valueString);
+            String total = "";
+            addToValues(valueString); //Adds the current value entered into the value list and sets up the next value.
             textArea.setText("");
-            String total = math.addValue(values.get(values.size()-1),values.get(values.size()-2));
-            addToValues(total);
-            textArea.append(total);
+            switch(operation){
+                case "+":
+                    total = math.addValue(values.get(0),values.get(1));
+                    break;
+                case "-":
+                    total = math.subtractValue(values.get(0),values.get(1));
+                    break;
+                case "*":
+                    total = math.multiplyValue(values.get(0),values.get(1));
+                    break;
+                case "/":
+                    total = math.divideValue(values.get(0),values.get(1));
+                    break;
+            }
+            operation = "";
+            textArea.append(value + " " + total);
         });
     }
 }
