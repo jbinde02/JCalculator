@@ -36,6 +36,7 @@ public class CalculatorUI {
 
     public CalculatorUI(){
         values = new ArrayList<String>();
+        values.ensureCapacity(2);
         operation = "";
         valueString = "";
         frame.setSize(250,275);
@@ -285,7 +286,7 @@ public class CalculatorUI {
             String value = "";
             values.removeAll(values);
             valueString = "";
-            textArea.append(value);
+            textArea.setText(value);
         });
         buttonEquals.addActionListener(e ->{
             String value = "=";
@@ -294,16 +295,32 @@ public class CalculatorUI {
             textArea.setText("");
             switch(operation){
                 case "+":
-                    total = math.addValue(values.get(0),values.get(1));
+                    try {
+                        total = math.addValue(values.get(0),values.get(1));
+                    }catch (IllegalArgumentException ie){
+                        System.out.println("Missing value.");
+                    }
                     break;
                 case "-":
-                    total = math.subtractValue(values.get(0),values.get(1));
+                    try {
+                        total = math.subtractValue(values.get(0),values.get(1));
+                    }catch (IllegalArgumentException ie){
+                        System.out.println("Missing value.");
+                    }
                     break;
                 case "*":
-                    total = math.multiplyValue(values.get(0),values.get(1));
+                    try {
+                        total = math.multiplyValue(values.get(0),values.get(1));
+                    }catch (IllegalArgumentException ie){
+                        System.out.println("Missing value.");
+                    }
                     break;
                 case "/":
-                    total = math.divideValue(values.get(0),values.get(1));
+                    try {
+                        total = math.divideValue(values.get(0),values.get(1));
+                    }catch (IllegalArgumentException ie){
+                        System.out.println("Missing value.");
+                    }
                     break;
             }
             operation = "";

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6a19b85-40d2-49a6-ab25-de2d019e10b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JCalculator/CalculatorMath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JCalculator/CalculatorMath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JCalculator/CalculatorUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JCalculator/CalculatorUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CalculatorMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculatorMath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CalculatorUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculatorUI.java" afterDir="false" />
     </list>
@@ -72,6 +73,14 @@
       <option name="presentableId" value="Default" />
       <updated>1579804941916</updated>
     </task>
+    <task id="LOCAL-00001" summary="Simplified the calculator. Made sure it only uses two strings to make it simple. Working on clear button.">
+      <created>1581274343141</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581274343141</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Simplified the calculator. Made sure it only uses two strings to make it simple. Working on clear button." />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplified the calculator. Made sure it only uses two strings to make it simple. Working on clear button." />
   </component>
 </project>
