@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JCalculator:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d6a19b85-40d2-49a6-ab25-de2d019e10b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JCalculator_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JCalculator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JCalculator/CalculatorMath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JCalculator/CalculatorMath.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JCalculator/CalculatorUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JCalculator/CalculatorUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CalculatorMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculatorMath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CalculatorUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculatorUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JCalculator/JCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JCalculator/JCalculator.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +42,9 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../IoT-BinaryTimer" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -80,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581274343141</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Simplified the calculator. Made sure it only uses two strings to make it simple. Working on clear button.">
+      <created>1581274962024</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581274962024</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,7 +106,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
